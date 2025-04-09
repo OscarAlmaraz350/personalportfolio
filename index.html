@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oscar Almaraz Portfolio</title>
+
+  <!--css del swiper-->
+  <link rel="stylesheet" href="/source/css/swiper-bundle.min.css">
+  <!--css normal-->
+  <link rel="stylesheet" href="/source/css/style.css">
+
+</head>
+<body>
+
+<section class="hidden main swiper mySwiper">
+  <div class="wrapper swiper-wrapper">
+    <div class="slide swiper-slide">
+      <img src="img/japan1.jpg" alt="" class="image" />
+      <div class="image-data">
+        <span class="text">Programador, productor</span>
+        <h2> Oscar Saul Zainos Almaraz 
+        </h2>
+        <a href="#informatica" id="botoninformatica" class="button" data-tab="informatica"> Informacion</a>
+      </div>
+    </div>
+    <div class="slide swiper-slide">
+      <img src="img/saynoz xd.jpg" alt="" class="image" />
+      <div class="image-data">
+        <span class="text">Gustas mas informacion?</span>
+        <h2> Contactame 
+        </h2>
+        <a href="#contacto" id="botoncontacto" class="button" data-tab="contacto"> Contactame</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="swiper-button-next nav-button"></div>
+  <div class="swiper-button-prev nav-button"></div>
+  <div class="swiper-pagination"></div>
+</section>
+
+<br><br><br><br>
+
+<section class="hidden">
+<div class="container">
+  <div class="tab_box">
+    <button id="informatica" class="tabbutton informatica active">Informatica</button>
+    <button id="musica" class="tabbutton">Musica</button>
+    <button id="contacto" class="tabbutton contacto" >Contacto</button>
+    <div class="line"></div>
+  </div>
+  
+  <!--contenido xd-->
+  <div id="idinformatica" class="contentbox">
+    <div class="content active">
+      <h2>sos</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, et! Explicabo, alias aliquid expedita inventore dicta magnam ipsam ea cumque eveniet voluptatum nisi laudantium delectus amet voluptates doloremque nemo iste!</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, et! Explicabo, alias aliquid expedita inventore dicta magnam ipsam ea cumque eveniet voluptatum nisi laudantium delectus amet voluptates doloremque nemo iste!</p>
+
+    </div>
+  </div>
+
+  <div class="contentbox">
+    <div class="content">
+      <h2>sueus</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, et! Explicabo, alias aliquid expedita inventore dicta magnam ipsam ea cumque eveniet voluptatum nisi laudantium delectus amet voluptates doloremque nemo iste!</p>
+    </div>
+  </div>
+
+  <div id="contacto" class="contentbox">
+    <div class="content">
+      <h1>Alguna duda o necesita mas informacion? Envie un mensaje con la siguiente informacion:</h1> <br>
+      <form method="post" action="#">
+        <div class="fields">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="3"></textarea>
+          </div>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" /></li>
+        </ul>
+      </form>
+    </div>
+  </div>
+  
+</div>
+</section>
+<br><br><br><br>
+
+  <script src="/source/js/swiper-bundle.min.js"></script>
+    <!-- se inicia el slider-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        autoplay: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    
+    <script src="/source/js/nose.js"></script>
+
+  <!-- Pie de Página -->
+  <footer>
+    <div class="piepagina">
+      <p>&copy; Oscar Almaraz</p>
+    </div>
+  </footer>
+
+
+  
+
+
+</body>
+</html>
