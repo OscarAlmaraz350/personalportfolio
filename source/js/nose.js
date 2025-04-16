@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    autoplay: false,
+    autoplay: true,
     loop: true,
     pagination: {
       el: ".swiper-pagination",
