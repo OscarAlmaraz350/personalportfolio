@@ -13,8 +13,8 @@
 </head>
 <body>
 
-<section class="hidden main swiper mySwiper">
-  <div class="wrapper swiper-wrapper">
+<section class="main swiper mySwiper">
+  <div id="slider" class="wrapper swiper-wrapper">
     <div class="slide swiper-slide">
       <img src="img/japan1.jpg" alt="" class="image" />
       <div class="image-data">
@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="slide swiper-slide">
-      <img src="img/otra.jpg" alt="" class="image" />
+      <img src="img/2023recap.jpg" alt="" class="image" />
       <div class="image-data">
         <span class="text">Gracias por visitar</span>
         <h2> Tercer slide </h2>
@@ -107,33 +107,38 @@
 <br><br><br><br>
 
 
+  
   <script src="source/js/swiper-bundle.min.js"></script>
+  
+
 
   <script src="source/js/swiper-bundle.min.js" defer></script>
 
     <!-- se inicia el slider-->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        autoplay: false,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+    slidesPerView: 1,
+    autoplay: false,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
     </script>
     
 
-    <script src="source/js/nose.js"></script>
+  <script src="source/js/nose.js"></script>
 
-    <script src="source/js/nose.js" defer></script>
+  <script src="source/js/nose.js" defer></script>
 
+  <script src="source/js/swiper.jquery.min.js"></script>
 
+  <script src="source/js/swiper.jquery.min.js" defer></script>
   <!-- Pie de Página -->
   <footer>
     <div class="piepagina">

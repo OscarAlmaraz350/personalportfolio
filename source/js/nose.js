@@ -1,18 +1,16 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-  var mySwiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    autoplay: false,
     loop: true,
-    autoplay: {
-       delay: 5000,
-       disableOnInteraction: true,
-     },
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 });
@@ -35,6 +33,7 @@ const observer = new IntersectionObserver((entries) => {
 // si arrastra para arriba o para abajo, la informacion se ocultara
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
 
 
 //seccion que cambia el tab si aprieto los botones del slider
